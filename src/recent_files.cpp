@@ -166,6 +166,8 @@ private:
         if (!icon.IsOk())
             icon.LoadFile(fullname, wxBITMAP_TYPE_ICO);
 
+        icon.SetScaleFactor(HiDPIScalingFactor());
+
         return icon;
     }
 
